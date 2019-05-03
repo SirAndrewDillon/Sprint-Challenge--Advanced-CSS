@@ -215,6 +215,10 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -225,6 +229,18 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 92%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -242,6 +258,13 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -251,6 +274,26 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    order: 1;
+  }
+}
+.home .walk .walk-text button {
+  background: #22283a;
+  color: #F6F7F8;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text button {
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -259,4 +302,159 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+html {
+  background: url('/img/saturn.jpg');
+  background-size: cover;
+  height: 100%;
+}
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.navbar {
+  color: #fff;
+}
+.navbar h1 {
+  color: #fff;
+}
+.navbar a {
+  color: #fff;
+}
+#feedback-page {
+  text-align: center;
+}
+#form-main {
+  width: 100%;
+  float: left;
+  padding-top: 0px;
+}
+#form-div {
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  border-radius: 7px;
+}
+.montform .feedback-input {
+  color: #3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+/*Inputs styles*/
+.montform .feedback-input:focus {
+  background: #fff;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+/* Icons ---------------------------------- */
+.montform #name {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.montform #name:focus {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.montform #email {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.montform #email:focus {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.montform #comment {
+  background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.montform textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+.montform input:hover,
+.montform textarea:hover,
+.montform input:focus,
+.montform textarea:focus {
+  background-color: #e6e6e6;
+}
+.button-blue {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #6d4583;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+.button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0493bd;
+}
+.montform .submit:hover {
+  color: #3498db;
+}
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  transition: 0.3s ease;
+}
+.submit:hover .ease {
+  width: 100%;
+  background-color: white;
+}
+/*Styles for small screens*/
+@media only screen and (max-width: 580px) {
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
