@@ -1,1 +1,33 @@
 // Mixins Here
+
+//Parametric Mixin
+
+.button(@bgcolor, @fntcolor, @width, @height, @fntsize) {
+    background-color: @bgcolor;
+    color: @fntcolor;
+    border-radius: 0.5rem;
+    width: @width;
+    height: @height;
+    font-size: @fntsize;
+    padding: 0.5rem;
+    text-align: center;
+  
+    &:hover {
+      background-color: @shuttle-gray;
+      color: @fntcolor;
+    }
+  }
+
+  .center() {
+    margin: 0 auto;
+  }
+
+  .flex-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+  .spacing(@space: 20px) {
+    margin-bottom: @space;
+  }
