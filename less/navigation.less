@@ -1,1 +1,48 @@
 // Navigation code here
+
+.navbar {
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid @nav-border;
+    // background-color: @nav-bg;
+    // Add opacity to bg color:
+   
+  
+    .navbar-container {
+      .center;
+      max-width: @container-width;
+  
+    }
+  }
+   
+  
+  .navbar-container {
+    flex-direction: column;
+    padding: 18px 0;
+    .flex-layout(space-between, center);
+  
+    h1 {
+        font-size: 3.1rem;
+      .spacing(15px);
+    }
+  }
+  
+  // Main nav
+  .main-nav {
+    width: 56%;
+    .flex-layout(space-evenly, flex-start);
+  
+    @media @mobile {
+      width: 90%;
+    }
+  
+    a {
+      color: @header-font-color;
+      font-size: 1.6rem;
+      text-decoration: none;
+  
+      &:hover {
+        color: @main-font-color;
+      }
+    }
+  }
