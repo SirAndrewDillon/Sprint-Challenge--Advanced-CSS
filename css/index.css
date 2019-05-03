@@ -311,28 +311,24 @@ footer {
   }
 }
 html {
-  background: url('/img/saturn.jpg');
   background-size: cover;
   height: 100%;
 }
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-.navbar {
-  color: #fff;
-}
 .navbar h1 {
-  color: #fff;
+  color: #000;
 }
 .navbar a {
-  color: #fff;
+  color: #000;
 }
 #feedback-page {
   text-align: center;
 }
 #form-main {
   width: 100%;
-  float: left;
+  margin: 0 auto;
   padding-top: 0px;
 }
 #form-div {
@@ -432,23 +428,24 @@ body {
 }
 .button-blue:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #0493bd;
+  color: #00080a;
 }
 .montform .submit:hover {
-  color: #3498db;
+  color: #010a0f;
 }
 .ease {
   width: 0px;
   height: 74px;
-  background-color: #fbfbfb;
+  background-color: #f355e6;
   transition: 0.3s ease;
 }
 .submit:hover .ease {
   width: 100%;
-  background-color: white;
+  color: #000;
+  background-color: #b959fa;
 }
 /*Styles for small screens*/
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 500px) {
   #form-div {
     left: 3%;
     margin-right: 3%;
