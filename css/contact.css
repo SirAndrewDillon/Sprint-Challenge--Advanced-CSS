@@ -1,5 +1,5 @@
 html {
-
+    background-image: url(/img/PIA03160.jpg);
     background-size: cover;
     height: 100%;
 }
@@ -8,12 +8,21 @@ body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+.navbar {
+    margin-left: 650px; 
+    margin-bottom: 70px;
+}
+
 .navbar h1 {
-    color: #000;
+    color: #fff;
+    margin-left: 170px;
+    margin-bottom: 70px;
 }
 
 .navbar a {
-    color: #000;
+    color: #fff;
+    font-weight: bold;
+    margin: 40px;
 }
 
 #feedback-page {
